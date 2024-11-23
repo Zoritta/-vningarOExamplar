@@ -12,6 +12,9 @@ class Program
        numbers[3]= 7;
        numbers[4]= 9;
 
-       Console.WriteLine(" Value in the position 2 is " + numbers[2]);
+       Console.WriteLine("Value in the position 2 is " + numbers[2]);
+
+       int[] values = [1,2,3,4,5,6,7,8,9];
+       Console.WriteLine("Value in position 6 is : " + values[6]);
     }
 }
