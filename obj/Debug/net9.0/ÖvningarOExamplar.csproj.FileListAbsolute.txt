@@ -1,0 +1,14 @@
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\bin\Debug\net9.0\ÖvningarOExamplar.exe
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\bin\Debug\net9.0\ÖvningarOExamplar.deps.json
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\bin\Debug\net9.0\ÖvningarOExamplar.runtimeconfig.json
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\bin\Debug\net9.0\ÖvningarOExamplar.dll
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\bin\Debug\net9.0\ÖvningarOExamplar.pdb
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\obj\Debug\net9.0\ÖvningarOExamplar.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\obj\Debug\net9.0\ÖvningarOExamplar.AssemblyInfoInputs.cache
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\obj\Debug\net9.0\ÖvningarOExamplar.AssemblyInfo.cs
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\obj\Debug\net9.0\ÖvningarOExamplar.csproj.CoreCompileInputs.cache
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\obj\Debug\net9.0\ÖvningarOExamplar.dll
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\obj\Debug\net9.0\refint\ÖvningarOExamplar.dll
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\obj\Debug\net9.0\ÖvningarOExamplar.pdb
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\obj\Debug\net9.0\ÖvningarOExamplar.genruntimeconfig.cache
+c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\obj\Debug\net9.0\ref\ÖvningarOExamplar.dll
