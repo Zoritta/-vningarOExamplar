@@ -12,3 +12,4 @@ c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\
 c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\obj\Debug\net9.0\ÖvningarOExamplar.pdb
 c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\obj\Debug\net9.0\ÖvningarOExamplar.genruntimeconfig.cache
 c:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\obj\Debug\net9.0\ref\ÖvningarOExamplar.dll
+C:\Users\zohrs\OneDrive\Documents\School\C# Course\Projekter\ÖvningarOExamplar\obj\Debug\net9.0\ÖvningarOExamplar.sourcelink.json

@@ -1,21 +1,17 @@
-﻿using System.Diagnostics.Contracts;
+﻿namespace simpleArrays;
 
-internal class Program
+class Program
 {
-    private static void Main(string[] args)
+    static void Main()
     {
-        int balance = 340;
-        Console.WriteLine("How much du you want to deposite?");
-        string deposite = Console.ReadLine()!;
-        balance += int.Parse(deposite);
-        DisplayBalance(balance);
-        Console.WriteLine("How much do you want to withdraw?");
-        string withdraw = Console.ReadLine()!;
-        balance -= int.Parse(withdraw);
-        DisplayBalance(balance);
-    }
+       int[] numbers = new int[5];
 
-    static void DisplayBalance(int balance){
-        Console.WriteLine("Your account balance is: " + balance);
+       numbers[0]= 1;
+       numbers[1]= 3;
+       numbers[2]= 5;
+       numbers[3]= 7;
+       numbers[4]= 9;
+
+       Console.WriteLine(" Value in the position 2 is " + numbers[2]);
     }
 }
