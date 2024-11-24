@@ -4,6 +4,7 @@ class Program
 {
     static void Main()
     {
+        try{
         // ARRAY METOD 1...
         int[] numbers = new int[5];
 
@@ -17,7 +18,7 @@ class Program
         numbers[4] = 5;
         // Kommer inte att fungera, finns ej plats för
         // en 6:e byrålåda...
-        // numbers[5] = 6;
+        numbers[5] = 6;
 
         Console.WriteLine("Värdet i listan: " + numbers[4]);
 
@@ -41,5 +42,16 @@ class Program
         Console.WriteLine("Antal element i vehicles: " + vehicles.Length);
         Console.WriteLine("Första bilen i vehicles: " + vehicles.First());
         Console.WriteLine("Sista bilen i vehicles: " + vehicles.Last());
+        }
+        catch(IndexOutOfRangeException ex){
+            Console.WriteLine(ex.Message);
+        }
+        catch(Exception ex){
+            Console.WriteLine(ex.Message);
+        }
+        finally{
+            Console.WriteLine("We are done now!!!");
+        }
+        
     }
 }
