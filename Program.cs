@@ -1,39 +1,20 @@
 ﻿using System;
 
 namespace simpleArrays;
-
 class Program
 {
     static void Main()
     {
-       int[] numbers = new int[5];
+        string name = "Jensen Education";
+        string character = name.Substring(7, 4);
+        Console.WriteLine(character);
+        var words = name.Split(' ');
+        Console.WriteLine(words[0]);  
+        Console.WriteLine(words[1]);
 
-       numbers[0]= 1;
-       numbers[1]= 3;
-       numbers[2]= 5;
-       numbers[3]= 7;
-       numbers[4]= 9;
-
-       Console.WriteLine("Value in the position 2 is " + numbers[2]);
-
-       int[] values = new int [] {1,2,3,4,5,6,7,8,9};
-       Console.WriteLine("Value in position 6 is : " + values[6]);
-
-       string[] vehicles = new string [5];
-       vehicles[0]= "Volvo";
-       vehicles[1]= "Ford";
-       vehicles[2]= "Toyota";
-       vehicles[3]= "Fiat";
-       vehicles[4]= "BMW";
-
-
-       object[] queries = new object[]
-       {
-        new {query= "query 1", answer = "answer to query 1"},
-        new {query= "query 2", answer = "answer to query 2"},
-        new {query= "query 3", answer = "answer to query 3"}
-       };
-
-       Console.WriteLine("Number of queries in the array is: " + queries.Length + queries.First() + queries.Last());
-    }
+        double value1 = 7988.6795;
+        double value2 = 7988.6888;
+        Console.WriteLine("Values are " + value1 + " and " + value2);
+        Console.WriteLine("Values are {0:N2} and {1:N}", value1, value2);
+    } 
 }
