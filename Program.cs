@@ -29,11 +29,11 @@ class Program
 
        object[] queries = new object[]
        {
-        new {query= "fquery 1", answer = "answer to query 1"},
+        new {query= "query 1", answer = "answer to query 1"},
         new {query= "query 2", answer = "answer to query 2"},
-        new {query= "query 1", answer = "answer to query 1"}
+        new {query= "query 3", answer = "answer to query 3"}
        };
 
-       Console.WriteLine("Number of queries in the array is: " + queries.Length);
+       Console.WriteLine("Number of queries in the array is: " + queries.Length + queries.First() + queries.Last());
     }
 }

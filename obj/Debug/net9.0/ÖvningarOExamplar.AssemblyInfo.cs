@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ÖvningarOExamplar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a19682bf074d9cc73ed81fd564a2a842f817ecd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3081e0a5a4e94149aad13c0bc0e967ea2d92c453")]
 [assembly: System.Reflection.AssemblyProductAttribute("ÖvningarOExamplar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ÖvningarOExamplar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
