@@ -17,8 +17,8 @@ class Program
         numbers[3] = 4;
         numbers[4] = 5;
         // Kommer inte att fungera, finns ej plats för
-        // en 6:e byrålåda...
-        numbers[5] = 6;
+        // en 6:e byrålåda... 
+        // numbers[5] = 6;
 
         Console.WriteLine("Värdet i listan: " + numbers[4]);
 
