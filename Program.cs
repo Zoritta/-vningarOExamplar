@@ -1,57 +1,92 @@
-﻿﻿namespace simpleArrays;
+﻿﻿namespace smoothATM;
+
+using System.Collections;
 
 class Program
 {
     static void Main()
     {
-        try{
-        // ARRAY METOD 1...
-        int[] numbers = new int[5];
+        try
+        {
+            var myAccount = new BankAccount();
 
-        // Lägg till ett heltal med hjälp av
-        // listans index(position)...
-        // Lägg in värdet 1 på första positionen(0)...
-        numbers[0] = 1;
-        numbers[1] = 2;
-        numbers[2] = 3;
-        numbers[3] = 4;
-        numbers[4] = 5;
-        // Kommer inte att fungera, finns ej plats för
-        // en 6:e byrålåda... 
-        // numbers[5] = 6;
+            // Visa saldot...
+            Console.WriteLine("Aktuellt saldo: {0}", myAccount.ShowBalance());
 
-        Console.WriteLine("Värdet i listan: " + numbers[4]);
+            // Sätt in pengar...
+            myAccount.Deposit(500);
 
-        // ARRAY METOD 2...
-        // Skapar och fyller på listan med färdiga värden...
-        int[] values = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+            // Visa saldot...
+            Console.WriteLine("Aktuellt saldo: {0}", myAccount.ShowBalance());
 
-        Console.WriteLine("Aktuellt värde i listan values: " + values[5]);
+            // Ta ut pengar...
+            myAccount.WithDraw(25);
+            myAccount.WithDraw(25);
+            myAccount.WithDraw(25);
+            myAccount.WithDraw(75);
 
-        // ARRAY MED STRÄNGAR...
-        // string[] vehicles = new string[5];
-        string[] vehicles = ["Volvo", "Ford", "KIA"];
+            // Visa saldot...
+            Console.WriteLine("Aktuellt saldo: {0}", myAccount.ShowBalance());
 
-        // ARRAY MED OBJEKT...
-        object[] queries = [
-            new { query = "Fråga 1", answer = "Svar på fråga 1" },
-            new { query = "Fråga 2", answer = "Svar på fråga 2" },
-            new { query = "Fråga 3", answer = "Svar på fråga 3" }];
+            // Visa transaktioner...
+            Console.WriteLine("Alla transaktioner");
+            Console.WriteLine("-------------------------");
 
-        // ARRAY METODER...
-        Console.WriteLine("Antal element i vehicles: " + vehicles.Length);
-        Console.WriteLine("Första bilen i vehicles: " + vehicles.First());
-        Console.WriteLine("Sista bilen i vehicles: " + vehicles.Last());
+            // foreach loop, för varje element i angiven lista(array) gör något...
+            var transactions = myAccount.DisplayTransactions();
+            foreach (var tran in transactions)
+            {
+                Console.WriteLine("Transaktionsvärde: {0}", tran);
+            }
         }
-        catch(IndexOutOfRangeException ex){
+        catch (Exception ex)
+        {
             Console.WriteLine(ex.Message);
         }
-        catch(Exception ex){
-            Console.WriteLine(ex.Message);
+    }
+}
+
+public class BankAccount
+{
+    // Skapat informationshanterare
+    // Variabel för att hålla reda på saldot...
+    int balance = 0;
+
+    // Använd en dynamisk array...
+    ArrayList transactions = new ArrayList();
+
+    // Metod för att sätta in pengar...
+    public void Deposit(int value)
+    {
+        // balance = balance + value;
+        balance += value;
+        transactions.Add(value);
+    }
+
+    public ArrayList DisplayTransactions()
+    {
+        return transactions;
+    }
+
+    // Metod för att visa saldot...
+    public int ShowBalance()
+    {
+        return balance;
+    }
+
+    // Metod för att ta ut pengar...
+    public void WithDraw(int value)
+    {
+        // if(villkoret) {vägriktning}
+        if (balance < value)
+        {
+            throw new Exception("Du har inte tillräckligt på kontot!");
         }
-        finally{
-            Console.WriteLine("We are done now!!!");
+        else
+        {
+            // balance = balance - value;
+            balance -= value;
+            transactions.Add(value);
         }
-        
     }
 }
